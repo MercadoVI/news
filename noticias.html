@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración básica -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="es" />
+
+    <!-- Título y descripción SEO -->
+    <title id="meta-title">Cargando...</title>
+    <meta name="description" id="meta-description">
+    <meta name="keywords" id="meta-keywords">
+    <meta name="author" content="Mercado de Valores Inmobiliarios" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" id="meta-canonical">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" id="og-title">
+    <meta property="og:description" id="og-description">
+    <meta property="og:image" id="og-image">
+    <meta property="og:url" id="og-url">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title">
+    <meta name="twitter:description" id="twitter-description">
+    <meta name="twitter:image" id="twitter-image">
+
+    <!-- Favicon -->
+    <link rel="icon" href="logop.png" type="image/x-icon" />
+
+    <!-- Tipografías -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="es" id="hreflang-es">
+    <link rel="alternate" hreflang="en" id="hreflang-en">
+    <link rel="alternate" hreflang="zh" id="hreflang-zh">
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Scripts -->
+    <script defer src="documentos.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="popup-embajadores.js"></script>
+    <script defer src="noticias.js"></script>
+    <script defer src="cargar-noticia.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LV4H65E3LH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-LV4H65E3LH');
+    </script>
+
+
+    <style>
+        .art-image {
+            flex: 1 1 70%;
+            background-size: cover;
+            background-position: center center;
+            min-height: 300px;
+        }
+
+        ul.social {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 0;
+            flex-wrap: wrap;
+            align-items: right;
+        }
+
+        ul.social a {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: #111;
+            transition: color 0.3s;
+        }
+
+        ul.social a:hover {
+            color: #111;
+        }
+
+        ul.social img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+
+        .btn-uniforme {
+            height: 40px;
+            line-height: 60px;
+            padding: 0 20px;
+            font-family: 'Playfair Display', serif;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            border: none;
+            background-color: #d4af37;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .btn-uniforme:hover {
+            background-color: #b8972f;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            margin-bottom: 0.625rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                includedLanguages: 'es,en,zh-CN',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- HEADER -->
+    <header class="lux-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="logop.png" alt="Logo Mercado de valores inmobiliarios" class="logo">
+            </a>
+            <p class="lux-title">Early Stage</p>
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+            <nav class="lux-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="invertir-en-inmuebles.html">Invertir</a></li>
+                    <li><a href="noticias-del-mercado-inmobiliario.html">Noticias</a></li>
+                    <li><a href="articulos-de-inversion-inmobiliaria.html">Artículos</a></li>
+                    <li><a href="resena.html">Reseñas</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <li><a href="MVI.html">MVI</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div id="user-section"></div>
+        </div>
+    </header>
+
+    <section class="art-block">
+        <div class="art-image" id="art-image"></div>
+        <div class="art-content" id="art-content">
+            <!-- Contenido dinámico aquí -->
+
+
+        </div>
+        <div class="property-precio-boton"
+            style="display: inline-flex; align-items: center; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
+            <a class="btn invertir-btn btn-uniforme" href="invertir-en-inmuebles.html">Invertir</a>
+
+            <button id="manage-operation-button" class="btn invertir-btn btn-uniforme">
+                LISTA DE EMBAJADORES
+            </button>
+
+            <a class="btn invertir-btn btn-uniforme" href="noticias-del-mercado-inmobiliario.html">
+                Leer más Noticias
+            </a>
+
+            <a href="https://twitter.com/MVI_RealEstate" target="_blank">
+                <img class="social-icon"
+                    src="https://www.lowi.es/blog/wp-content/uploads/2023/10/twitter-X-1000x625.jpeg"
+                    alt="Twitter MVI" />
+            </a>
+
+            <a href="https://www.linkedin.com/company/mercado-de-valores-inmobiliarios/" target="_blank">
+                <img class="social-icon"
+                    src="https://store-images.s-microsoft.com/image/apps.1719.9007199266245564.44dc7699-748d-4c34-ba5e-d04eb48f7960.abf46174-2d32-4f53-a6cd-644d5b2be452"
+                    alt="LinkedIn MVI" />
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61575652539291" target="_blank">
+                <img class="social-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/1200px-2023_Facebook_icon.svg.png"
+                    alt="Facebook MVI" />
+            </a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <a href="index.html"><img src="logop.png" alt="Logo Mercado de valores inmobiliarios" /></a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="MVI.html">Sobre nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="doc.html">Documentos legales</a></li>
+                        <li><a href="Carta de Intención de Colaboración - Emisores.docx.pdf">Carta de Intención -
+                                Emisores</a></li>
+                        <li><a href="Carta de Intención de Inversión.pdf">Carta de Intención - Inversores</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>MVI está actualmente en ronda de financiación. Si desean invertir en el proyecto, envíenos una propuesta al
+            correo indicado: contacto@mercadodevaloresinmobiliarios.com.</p>
+        <p>&copy; 2025 MVI. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
